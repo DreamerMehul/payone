@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<title>Multi Step Form</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script language="JavaScript" src="../lib/jquery-2.1.4.js" type="text/javascript"></script>
+<script language="JavaScript" src="../js/multistep.js" type="text/javascript"></script>
+<script language="javascript">
+	$(function(){
+		multi_step_form({
+			container: '.sections',
+			section: '.section'
+		});
+	});
+</script>
+
+<script src="../js/placeholders.min.js" type="text/javascript"></script>
+
+<!-- /********************/  -->
+
+</head>
+
+<body>
+	<div id="wrapper">
+        <div class="container">
+        	<!-- BEGIN MULTI-STEP FORM -->
+            <div class="sections">
+                <form>
+                    <div class="section-holder">
+                        <h2 class="form-title">Multi Step Form</h2>
+                        <h2 class="section-title"></h2>
+                        <div class="section current" section="Section One">
+                        	<input name="post_type" class="post-type" type="hidden" value="Email" />
+                            <label><input name="first_name" type="text" placeholder="First Name" data="required" /></label>
+                            <label><input name="last_name" type="text" placeholder="Last Name" data="required" /></label>
+                            <label>
+                                <select name="gender" placeholder="Gender" data="required">
+                                    <option value="">--- Select a Gender ---</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Femal">Female</option>
+                                </select>
+                            </label>
+                            <label><input name="mobile" type="text" placeholder="Mobile Number" data="required" /></label>
+                        </div><!-- close section -->
+                        <div class="section" section="Section Two">
+                            <label><input name="email" type="email" placeholder="Email" data="email" /></label>
+                            <label><input name="username" type="text" placeholder="Username" data="required" /></label>
+                            <label><input name="password" type="password" placeholder="Password" data="required" /></label>
+                        </div><!-- close section -->
+                        <div class="section" section="Section Three">
+                           <label>
+                                <select name="package" placeholder="Packages" data="required">
+                                    <option value="">--- Select a Package ---</option>
+                                    <option value="Package One">Package One</option>
+                                    <option value="Package Two">Package Two</option>
+                                    <option value="Package Three">Package Three</option>
+                                </select>
+                            </label>
+                            <label><input name="address" type="text" placeholder="Personal Address" data="required" /></label>
+                            <label><textarea name="shipping" placeholder="Shipping Address" data="required" cols="40" rows="5" ></textarea></label>
+                            <input name="permit" type="radio" value="A" placeholder="Permit Class" data="required" /> Class A &nbsp;<input type="radio" name="permit" value="B" placeholder="Permit Class" data="required" />Class B
+                            <label><input name="verified" type="checkbox" value="Yes" placeholder="Verified" data="required" /> Verified</label>
+                        </div><!-- close section -->
+                        <div class="section final" section="Summary">
+                        </div><!-- close section -->
+                        <div id="preloader" class="none"><img src="images/15.gif" /></div>
+                   <div class="clear"></div>
+                </div>
+                <!-- BEGIN NAVIGATION -->
+                <div class="section-holder">
+                    <div class="back">Back</div>
+                    <div class="next">Next</div>
+                    <div class="clear"></div>
+                </div>
+                <!-- END NAVIGATION -->
+                    </form>
+            </div>
+            <!-- BEGIN PROGRESS BAR -->
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="progress-text">0%</div>
+            </div>
+            <!-- END PROGRESS BAR -->
+        <!-- END MULTI-STEP FORM -->
+        </div>
+	</div>
+</body>
+</html>

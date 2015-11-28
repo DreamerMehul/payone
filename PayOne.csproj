@@ -75,6 +75,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\preview.css" />
+    <Content Include="app\css\style.css" />
+    <Content Include="app\HTML\Customer.html" />
+    <Content Include="app\HTML\Login.html" />
+    <Content Include="app\HTML\PayNow.html" />
+    <Content Include="app\js\multistep.js" />
+    <Content Include="app\js\placeholders.min.js" />
     <Content Include="app\lib\angularjs.js" />
     <Content Include="app\lib\jquery-2.1.4.js" />
     <Content Include="Web.config" />
@@ -82,10 +89,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\HTML\" />
-    <Folder Include="app\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

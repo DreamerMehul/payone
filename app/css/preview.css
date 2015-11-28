@@ -1,0 +1,46 @@
+/* CSS Document */
+
+ul.preview{
+	width:353px;
+	position:relative;
+	clear:both;
+	background-color:#fff;
+}
+
+ul.preview li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	margin:0!important;
+}
+
+ul.preview li a{
+	display:block;
+	margin:0!important;
+	padding:20px;
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+}
+ul.preview li a:hover{
+}
+
+.grey{
+	background-color:#ebebeb;
+}
+
+.blue{
+	background-color:#295A8B;
+}
+
+.red{
+	background-color: #CC0000;
+}
+
+.green{
+	background-color: #486A00;
+}
+
+.black{
+	background-color:#000;
+}

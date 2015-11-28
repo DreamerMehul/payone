@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+<title>Multi Step Form</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../lib/jquery-2.1.4.js" type="text/javascript"></script>
+<script language="JavaScript" src="../js/multistep.js" type="text/javascript"></script>
+<script language="javascript">
+    $(function () {
+        multi_step_form({
+            container: '.sections',
+            section: '.section'
+        });
+    });
+</script>
+<script src="../js/placeholders.min.js" type="text/javascript"></script>
+<!-- /********************/  -->
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <!-- BEGIN MULTI-STEP FORM -->
+            <div class="sections">
+                <form>
+                <div class="section-holder">
+                    <h2 class="form-title">
+                        Pay Now</h2>
+                    <div class="section" section="Section Two">
+                        <label>
+                            <input name="email" type="email" placeholder="Email" data="email" /></label>
+                        <label>
+                            <input name="username" type="text" placeholder="Username" data="required" /></label>
+                        <label>
+                            <input name="password" type="password" placeholder="Password" data="required" /></label>
+                    </div>
+                    <!-- close section -->
+                    <!-- BEGIN NAVIGATION -->
+                    <div class="section-holder">
+                        <div class="back">
+                            Pay Now</div>
+                        
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <!-- END NAVIGATION -->
+                </form>
+            </div>
+            <!-- END MULTI-STEP FORM -->
+        </div>
+    </div>
+</body>
+</html>
